@@ -8,8 +8,9 @@ export class Todo extends Component {
       newTodo: ''
     }
   }
+
   handleChange(e) {
-    // equivalent to const value = e.target.value
+    // called destructruing, equivalent to const value = e.target.value
     const {value} = e.target;
     this.setState({newTodo: value});
   }
